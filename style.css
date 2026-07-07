@@ -1,13 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
-    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    align-items: center;
     
 }
 
@@ -16,3 +24,112 @@ a {
     color: #333;
     font-weight: bold;
 }
+
+span{
+    color: #fd6e0a;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.btn {
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    filter 0.3s ease;
+    background-color: #fd6e0a;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btn-contact{
+      transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    filter 0.3s ease;
+    background-color: #d5d3d2;
+    border: none;
+    color: #fd6e0a;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+}
+.btn:hover, .btn:focus-visible {
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .btn:hover, .btn:focus-visible {
+    transform: scale(1.02);
+  }
+}
+
+.btn-contact:hover, .btn-contact:focus-visible {
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .btn-contact:hover, .btn-contact:focus-visible {
+    transform: scale(1.02);
+  }
+}
+
+
+
+
+/* hero styles */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('/images/header_bg.png');
+    background-size: cover;
+}
+    
+
+.left , .right {
+    flex: 1;
+}
+.left img {
+    width: 100%;
+    height: 650px;
+    display: block;
+}
+
+/* hero ends */
+
+/* about section starts */
+
+.about-me {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+    height: 100vh;
+
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+ 
+}
+
+.about-me p{
+    margin-top: 20px;
+}
+
